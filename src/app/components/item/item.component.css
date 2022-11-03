@@ -1,10 +1,10 @@
-.imagenes{
+.images{
     display: flex;
     margin: 5rem 0;
     margin-left: 15%;
 }
 
-.imagen{
+.image{
     margin-left: 4rem;
     text-align: center;
     background-color: rgb(44, 44, 44);
