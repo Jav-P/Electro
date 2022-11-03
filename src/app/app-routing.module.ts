@@ -5,7 +5,6 @@ import { GeneralComponent } from './pages/general/general.component';
 
 const routes: Routes = [
   {path:'',component: GeneralComponent,pathMatch:'full'},
-  {path:'general',component: GeneralComponent},
   {path:'add',component: AddComponent},
 
 ];
