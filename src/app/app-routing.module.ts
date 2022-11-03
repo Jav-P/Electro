@@ -6,7 +6,7 @@ import { GeneralComponent } from './pages/general/general.component';
 
 const routes: Routes = [
   {path:'',component: GeneralComponent,pathMatch:'full'},
-  {path:'brand',component: BrandComponent},
+  {path:'hola',component: BrandComponent},
   {path:'category',component: CategoryComponent},
 ];
 
