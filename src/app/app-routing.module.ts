@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddComponent } from './pages/add/add.component';
+import { BrandComponent } from './pages/brand/brand.component';
+import { CategoryComponent } from './pages/category/category.component';
 import { GeneralComponent } from './pages/general/general.component';
 
 const routes: Routes = [
   {path:'',component: GeneralComponent,pathMatch:'full'},
-  {path:'add',component: AddComponent},
-
+  {path:'brand',component: BrandComponent},
+  {path:'category',component: CategoryComponent},
 ];
 
 @NgModule({
