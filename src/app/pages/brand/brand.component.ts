@@ -8,8 +8,11 @@ import { ElectroServiceService } from 'src/app/service/electroService.service';
   styleUrls: ['./brand.component.css']
 })
 export class BrandComponent implements OnInit {
-
-  marca : Marca;
+  marcas: Marca
+  marca : Marca={
+    id:0,
+    nombre:''
+  };
 
   constructor(private electroService: ElectroServiceService) { }
 
@@ -17,8 +20,8 @@ export class BrandComponent implements OnInit {
   }
 
   enviar(){
-    console.log(this.marca);
-    
+   console.log(
+     this.electroService.crearMarca(this.marca)
+   );
   }
-
 }

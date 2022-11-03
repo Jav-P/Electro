@@ -1,5 +1,26 @@
+.imagenes{
+    display: flex;
+    margin: 5rem 0;
+    margin-left: 15%;
+}
+
 .imagen{
-    background-color: black;
-    width: 10rem;
-    height: 10rem;
+    margin-left: 4rem;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    width: 30rem;
+    height: 30rem;
+}
+.titule{
+    font-size: 2rem;
+}
+.text{
+    font-size: 1.8rem;
+}
+.cont{
+    margin-left: 10%;
+    justify-items: center;
+    display: grid;
+    border-color: black;
+    width: 80rem;
 }

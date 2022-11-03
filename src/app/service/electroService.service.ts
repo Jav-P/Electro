@@ -13,7 +13,10 @@ export class ElectroServiceService {
   constructor(private http : HttpClient) { }
 
   /*Gets*/ 
-
+  mostrartodo():Observable<Marca[]>{
+    const url = `${this.apiUrl}/Marca/ListarMarcas?dataOwner=29539dd2-45e9-49ef-84a2-6ab5aee04c0d`;
+    return this.http.get<Marca[]>(url);
+  }
 
   /*Posts*/
   crearMarca(marca : Marca) : Observable<Marca>{
