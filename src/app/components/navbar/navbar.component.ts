@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ElectroServiceService } from 'src/app/service/electro-service.service';
+import { ElectroServiceService } from 'src/app/service/electroService.service';
 
 @Component({
   selector: 'app-navbar',

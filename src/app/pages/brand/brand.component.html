@@ -1,6 +1,11 @@
-<form action="" class="container">
-    <label> id: </label>
-    <input type="number">
-    <label> Nombre </label>
-    <input type="text" [(ngModel)] = "marca.nombre">    
+<form (ngSubmit)="enviar()" class="container">
+    <div>
+        <label> id: </label>
+        <input type="number" [(ngModel)] = "marca.id">
+    </div>
+    <div>
+        <label> Nombre </label>
+        <input type="text" [(ngModel)] = "marca.nombre">    
+    </div>
+    <button>Guardar</button>
 </form>
