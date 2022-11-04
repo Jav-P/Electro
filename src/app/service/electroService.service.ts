@@ -11,6 +11,10 @@ export class ElectroServiceService {
   private apiUrl: string = 'https://electrics.azurewebsites.net'
   private key: string = '29539dd2-45e9-49ef-84a2-6ab5aee04c0d'
 
+  /*filtro*/
+  
+  id:number=0;
+
   constructor(private http : HttpClient) { }
 
   /*Gets*/ 
@@ -28,5 +32,9 @@ export class ElectroServiceService {
     const url = `${this.apiUrl}/Marca/CrearMarca?dataOwner=${this.key}`;
     return this.http.post(url,marca);
   }
+
+  
+
+
 
 }

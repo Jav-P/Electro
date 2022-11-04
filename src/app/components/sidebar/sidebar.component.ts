@@ -9,6 +9,8 @@ import { ElectroServiceService } from 'src/app/service/electroService.service';
 })
 export class SidebarComponent implements OnInit {
 
+ 
+
   marcas: Marca[];
 
   constructor(private service:ElectroServiceService) { }
@@ -25,8 +27,8 @@ export class SidebarComponent implements OnInit {
    });
   }
 
-  filtrar(marca:Marca){
-
+  filtrar(marca:number){
+   this.service.id=marca;
   }
 
 }

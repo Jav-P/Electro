@@ -1,7 +1,7 @@
 <div class="container">
     <h2>Marca</h2>
-<ul class="list" *ngFor="let marca of marcas" >
-    <a  (click)="filtrar(marca)" href="#" class="item">{{marca.nombre}}</a>
-    <hr>
-</ul>
+    <ul class="list" *ngFor="let marca of marcas" >
+        <a  (click)="filtrar(marca.id)" href="#" class="item">{{marca.nombre}}</a>
+        <hr>
+    </ul>
 </div>

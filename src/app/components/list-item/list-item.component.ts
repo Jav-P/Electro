@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Electrodomestic, Marca } from 'src/app/interfaces/marca.interface';
+import { Electrodomestic } from 'src/app/interfaces/marca.interface';
 import { ElectroServiceService } from 'src/app/service/electroService.service';
 
 @Component({
@@ -8,12 +8,11 @@ import { ElectroServiceService } from 'src/app/service/electroService.service';
   styleUrls: ['./list-item.component.css']
 })
 export class ListItemComponent implements OnInit {
-
-  marcas: Marca[];
-
+  
+  id:number;
   items: Electrodomestic[];
 
-  constructor(private service:ElectroServiceService) { }
+  constructor(public service:ElectroServiceService) { }
 
   ngOnInit(): void {
     this.List();

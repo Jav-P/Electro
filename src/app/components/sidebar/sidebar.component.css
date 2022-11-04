@@ -7,6 +7,7 @@
     padding-left: 2rem;
     text-decoration: none;
     font-size: 1.8rem;
+    color: black;
 }
 .list{
     padding-left: 2rem;
@@ -19,7 +20,9 @@ h2{
 }
 hr{
     text-align: left;
-    padding: 0;
+    padding-left: 0;
+    margin-right: 6rem;
     width: 90%;
-    background-color: black;
+    height: .1rem;
+    border: solid 1px black;
 }
