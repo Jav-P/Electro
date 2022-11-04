@@ -13,7 +13,7 @@ export class ElectroServiceService {
 
   /*filtro*/
   
-  id:number=0;
+  id:number ;
 
   constructor(private http : HttpClient) { }
 
@@ -23,8 +23,16 @@ export class ElectroServiceService {
     return this.http.get<Marca[]>(url);
   }
   listaElectro():Observable<Electrodomestic[]>{
+
+    
+
+    if(this.id!==null){
+      const url = `${this.apiUrl}/Electrodomestico/ListarElectrodomesticos?dataOwner=${this.key}`;
+      return this.http.get<Electrodomestic[]>(url);
+    }
     const url = `${this.apiUrl}/Electrodomestico/ListarElectrodomesticos?dataOwner=${this.key}`;
     return this.http.get<Electrodomestic[]>(url);
+
   }
 
   /*Posts*/
