@@ -1,0 +1,67 @@
+.container{
+    margin: 5rem 40% ;
+    background-color: rgb(237, 159, 253);
+    height: 15rem;
+    width: 30rem;
+}
+.sombra{
+    -webkit-box-shadow: 10px 10px 13px 1px rgba(216, 121, 216, 0.64);
+    -moz-box-shadow: 10px 10px 13px 1px rgba(231, 114, 231, 0.64);
+    box-shadow: 10px 10px 13px 1px rgba(248, 149, 248, 0.64);
+}
+.text{
+    padding-bottom: 1.5rem;
+}
+.label{
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+.input__id{
+    margin-left: 5rem;
+}
+.input__name{
+    margin-left: 1.4rem;
+}
+button{
+    margin-left: 2rem;
+    width: 80%;
+}
+button:hover{
+    background-color: aqua;
+    border-color: rgb(0, 197, 197);
+}
+.titute{
+    padding-top: 1rem;
+    padding-left: 35%;
+}
+
+/*Tabla*/
+
+.table{
+    border-color: black;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    padding: 1rem;
+}
+
+thead{
+    background-color: rgb(237, 159, 253);
+    border-bottom: solid 5px rgb(166, 95, 180);
+}
+tr:nth-child(even){
+    background-color: rgb(249, 199, 255);
+}
+
+tr:hover td{
+    background-color: rgb(255, 95, 194)
+    ;
+}
+.container__table{
+    width: 50rem;
+    margin-left: 34%;
+    text-align: center;
+}

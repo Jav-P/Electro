@@ -1,11 +1,36 @@
-<form (ngSubmit)="enviar()" class="container">
-    <div>
-        <label> id: </label>
-        <input type="number" [(ngModel)] = "marca.id" name="id">
+<div class="container sombra">
+    <form (ngSubmit)="enviar()" class="form">
+        <h2 class="titute">Crear Marca</h2>
+        <div class="text">
+            <label class="label"> id: </label>
+            <input type="number" name="id" [value]="48" [(ngModel)] = "marca.id" class="input__id" >
+        </div>
+        <div class="text">
+            <label class="label"> Nombre: </label>
+            <input type="text" name="Nombre" [(ngModel)]="marca.nombre" class="input__name">    
+        </div>
+        <button>Guardar</button>
+    </form>
+</div>
+<hr>
+
+<div class="container__table">
+    <h1>Marcas</h1>
+    <div class="container__marcas">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let marca of marcas">
+                    <td>{{marca.id}}</td>
+                    <td>{{marca.nombre}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div>
-        <label> Nombre </label>
-        <input type="text" name="Nombre" [(ngModel)]="marca.nombre">    
-    </div>
-    <button>Guardar</button>
-</form>
+</div>
+

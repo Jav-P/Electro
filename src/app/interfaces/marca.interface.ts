@@ -1,5 +1,5 @@
-export interface Marca{
-    id: number;
+export interface Marca {
+    id:     number;
     nombre: string;
 }
 

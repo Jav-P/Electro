@@ -24,9 +24,9 @@ export class ElectroServiceService {
   }
 
   /*Posts*/
-  crearMarca(marca : Marca) : Observable<Marca>{
+  crearMarca(marca : Marca) : Observable<object>{
     const url = `${this.apiUrl}/Marca/CrearMarca?dataOwner=${this.key}`;
-    return this.http.post<Marca>(url,marca);
+    return this.http.post(url,marca);
   }
 
 }

@@ -22,7 +22,11 @@ export class SidebarComponent implements OnInit {
       this.marcas=dato; 
       console.log(this.marcas);
        
-   })
+   });
+  }
+
+  filtrar(marca:Marca){
+
   }
 
 }
