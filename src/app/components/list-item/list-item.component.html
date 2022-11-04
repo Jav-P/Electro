@@ -1,1 +1,19 @@
-<p>list-item works!</p>
+<h2>Lista Electrodomesticoss</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Unidades</th>
+            <th>ID Marca</th>
+            <th>Garantia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td>{{item.nombre}}</td>
+            <td>{{item.unidadesDisponibles}}</td>
+            <td>{{item.idMarca}}</td>
+            <td>{{item.tiempoGarantia}}</td>
+        </tr>
+    </tbody>
+</table>
